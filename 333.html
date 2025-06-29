@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Bloom Diary – Dharshini</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Shadows+Into+Light&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #fff0f5;
+      color: #4b2c3a;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 40px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #d63384;
+      background: linear-gradient(to bottom, #ffe6f0, #ffeef5);
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1em;
+      padding: 20px 30px;
+      color: #7a4560;
+    }
+
+    .section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      position: relative;
+      background: #fff0f5;
+      scroll-snap-align: start;
+      transition: background 0.5s;
+    }
+
+    .section:nth-child(even) {
+      background: #ffe3ec;
+    }
+
+    .flower-img {
+      max-width: 80%;
+      max-height: 400px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease;
+    }
+
+    .flower-img:hover {
+      transform: scale(1.03);
+    }
+
+    .quote {
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 1.8em;
+      color: #c2185b;
+      text-align: center;
+      margin-top: 30px;
+      padding: 0 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      background: #fff0f5;
+      font-size: 0.9em;
+      color: #6b4c5a;
+    }
+
+    /* Scroll snap & smoothness */
+    html {
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+    }
+
+    /* Soft float animation */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .flower-img {
+      animation: float 6s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <header>The Bloom Diary 🌸</header>
+
+  <div class="intro">
+    <p>Hello! I'm <strong>Dharshini</strong>, a final-year BCA student. Flowers remind me that even quiet things can bloom with beauty. This is not just a gallery – it's a blooming diary of feelings, captured one petal at a time.</p>
+  </div>
+
+  <!-- Flower Sections -->
+  <div class="section">
+    <img src="flower1.jpg" class="flower-img" alt="Flower 1">
+    <div class="quote">"Every petal is a poem."</div>
+  </div>
+
+  <div class="section">
+    <img src="flower2.jpg" class="flower-img" alt="Flower 2">
+    <div class="quote">"Turn your heart to the sun, like sunflowers do."</div>
+  </div>
+
+  <div class="section">
+    <img src="flower3.jpg" class="flower-img" alt="Flower 3">
+    <div class="quote">"Some feelings bloom in silence."</div>
+  </div>
+
+  <div class="section">
+    <img src="flower4.jpg" class="flower-img" alt="Flower 4">
+    <div class="quote">"Lavender dreams and peaceful thoughts."</div>
+  </div>
+
+  <div class="section">
+    <img src="flower5.jpg" class="flower-img" alt="Flower 5">
+    <div class="quote">"In a field of tulips, you are my spring."</div>
+  </div>
+
+  <div class="section">
+    <img src="flower6.jpg" class="flower-img" alt="Flower 6">
+    <div class="quote">"Some blooms are too soft to stay, but never forgotten."</div>
+  </div>
+
+  <div class="section">
+    <img src="flower7.jpg" class="flower-img" alt="Flower 7">
+    <div class="quote">"Daisies remind me of quiet joy."</div>
+  </div>
+
+  <footer>
+    Made with 🌸 and 💖 by Dharshini | Final Year BCA | Srimad Andavan College
+  </footer>
+
+</body>
+</html>
